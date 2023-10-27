@@ -1,0 +1,305 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: #040415;
+   overflow: hidden;
+}
+
+.container{
+    height: 20em;
+    width: 15em;
+    background-image: linear-gradient( #ffffff,#adf7ff,#63efff, #39ebff,#14bccf );
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 15em;
+    animation: skycolor 15s infinite forwards;
+    overflow: hidden;
+}
+
+@keyframes skycolor{
+    0%{
+        background-image: linear-gradient(#ffffff,#adf7ff,#63efff, #39ebff,#14bccf );
+    }
+    30%{
+        background-image: linear-gradient(#adf7ff,#fffd77);
+    }
+    40%{
+        background-image: linear-gradient(#8800ff, #ff1375,#ff1255, #ff851b, #fffb04);
+    }
+    50%{
+        background-image: linear-gradient(#3a0052, #540061,#200065, #030032, #080026);
+    }
+    60%{
+        background-image: linear-gradient(#1f0047, #10004a, #060025, #000011, #000000);
+    }
+    80%{
+        background-image: linear-gradient(#3a0052, #540061,#200065, #030032, #080026);   
+    }
+    100%{
+        background-image: linear-gradient(#3a0052, #540061,#200065, #030032, #080026); 
+    }
+}
+
+.spinner {
+    width:25em;
+    height: 25em;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top:4em;
+    left:-5.2em;
+    animation: spin 15s infinite linear forwards;
+}
+
+.sun{
+    width:2.5em;
+    height: 2.5em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    left:2em;
+    top:2em;
+    animation: brightness 15s linear infinite;
+}
+
+.shine1{
+    width:5em;
+    height: 5em;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    top:-1.17em;
+    left:-1.17em;
+    animation: brightness 15s linear infinite;
+}
+
+.shine2{
+    width:8em;
+    height: 8em;
+    background-color: #ffffff;
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+    top:-2.7em;
+    left:-2.7em;
+    animation: brightness 15s infinite linear;
+}
+
+.moon{
+    width:2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    box-shadow: 10px 10px #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    left:20em;
+    top:20em;
+    transform: rotate(90deg);
+}
+
+.shine3{
+    width:5em;
+    height: 5em;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    top:-0.6em;
+    left:-0.6em;
+}
+
+.shine4{
+    width:8em;
+    height: 8em;
+    background-color: #ffffff;
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+    top:-2.1em;
+    left:-2.1em;
+}
+
+
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    90%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes brightness{
+    0%{
+        background-color: #ffff00;
+    }
+    40%{
+        background-color: #ffffff;
+    }
+}
+
+.star{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    animation: twinkle 15s infinite linear;
+}
+
+.star1{
+    width:0.2em;
+    height: 0.2em;
+    top: 10em;
+    left: 5em;
+    box-shadow: 0px 0px 20px 5px white;
+}
+.star2{
+    width:0.1em;
+    height: 0.1em;
+    top: 2em;
+    left: 5.5em;
+}
+.star3{
+    width:0.1em;
+    height: 0.1em;
+    top:4em;
+    left:2em;
+    box-shadow: 0px 0px 20px 5px white;
+}
+.star4{
+    width:0.1em;
+    height: 0.1em;
+    top:4em;
+    left:10em;
+    box-shadow: 0px 0px 20px 5px white;
+}
+.star5{
+    width:0.2em;
+    height: 0.2em;
+    top:8em;
+    left:10em;
+    box-shadow: 0px 0px 20px 5px white;
+}
+.star6{
+    width:0.1em;
+    height: 0.1em;
+    top:6em;
+    left:6em;
+}
+.star7{
+    width:0.2em;
+    height: 0.2em;
+    top:6em;
+    left:14em;
+    box-shadow: 0px 0px 20px 5px white;
+}
+.star8{
+    width:0.1em;
+    height: 0.1em;
+    top:10em;
+    left:1em;
+}
+.star9{
+    width:0.2em;
+    height: 0.2em;
+    top:12em;
+    left:12em;
+}
+.star10{
+    width:0.1em;
+    height: 0.1em;
+    top:12em;
+    left:7em;
+}
+
+.hill2{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 8em solid transparent;
+    border-right: 10em solid transparent;
+    border-bottom: 10em solid #009e00;
+    top:11em;
+    left:3em;
+    animation: hill2 15s infinite linear;
+}
+
+.hill1{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 6em solid transparent;
+    border-right: 10em solid transparent;
+    border-bottom: 10em solid #00ff00;
+    top:10em;
+    left:-3em;
+    animation: hill1 15s infinite linear;
+}
+
+@keyframes hill1{
+    0%{
+        border-bottom: 10em solid #00ff00;
+    }
+    30%{
+        border-bottom: 10em solid #00c200;
+    }
+    40%{
+        border-bottom: 10em solid #004700;
+    }
+    50%{
+        border-bottom: 10em solid #303030
+    }
+    60%{
+        border-bottom: 10em solid #58769c;
+    }
+    100%{
+        border-bottom: 10em solid #1f1663;
+    }
+}
+
+@keyframes hill2{
+    0%{
+        border-bottom: 10em solid #009e00;
+    }
+    30%{
+        border-bottom: 10em solid #001800;
+    }
+    40%{
+        border-bottom: 10em solid #000000;
+    }
+    50%{
+        border-bottom: 10em solid #000000;
+    }
+    60%{
+        border-bottom: 10em solid #303030;
+    }
+    100%{
+        border-bottom: 10em solid #000000;
+    }
+}
+
+@keyframes twinkle {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
